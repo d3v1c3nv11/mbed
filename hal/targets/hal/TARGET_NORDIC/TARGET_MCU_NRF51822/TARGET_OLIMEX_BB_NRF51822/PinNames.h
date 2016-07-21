@@ -61,7 +61,7 @@ typedef enum {
     p28 = 28,
     p29 = 29,
     p30 = 30,
-//    p31=31,    
+ 
     
     P0_0  = p0,
     P0_1  = p1,
@@ -98,82 +98,65 @@ typedef enum {
     P0_29 = p29,
     P0_30 = p30,
     
-    LED1    = p10,
-    LED2    = p11,
-    LED3    = p12,
-    LED4    = p10,
+    LED	    = p21,	
+    LED1    = p21,
+    LED2    = p22,
+    LED3    = p23,
+    LED4    = p21,
     
     BUTTON1 = p17,
-    BUTTON2 = p18,
+    BUTTON2 = p17,
         
-    RX_PIN_NUMBER = p30,
-    TX_PIN_NUMBER = p20,
-    CTS_PIN_NUMBER = p19,
-    RTS_PIN_NUMBER = p18,
+    RX_PIN_NUMBER = p8,
+    TX_PIN_NUMBER = p9,
+    CTS_PIN_NUMBER = p4,
+    RTS_PIN_NUMBER = p5,
 
     // mBed interface Pins
     USBTX = TX_PIN_NUMBER,
     USBRX = RX_PIN_NUMBER,
         
-    SPI_PSELMOSI0 = p13,
-    SPI_PSELMISO0 = p7,
-    SPI_PSELSS0 = p14,
-    SPI_PSELSCK0 = p15,
+    SPI_PSELMOSI0 = p9,
+    SPI_PSELMISO0 = p8,
+    SPI_PSELSS0 = p4,
+    SPI_PSELSCK0 = p5,
         
-    SPI_PSELMOSI1 = p13,
-    SPI_PSELMISO1 = p7,
-    SPI_PSELSS1 = p14,
-    SPI_PSELSCK1 = p15,
+    SPI_PSELMOSI1 = p9,
+    SPI_PSELMISO1 = p8,
+    SPI_PSELSS1 = p4,
+    SPI_PSELSCK1 = p5,
 
-    SPIS_PSELMOSI = p13,
-    SPIS_PSELMISO = p7,
-    SPIS_PSELSS = p14,    
-    SPIS_PSELSCK = p15,
+    SPIS_PSELMOSI = p9,
+    SPIS_PSELMISO = p8,
+    SPIS_PSELSS = p4,    
+    SPIS_PSELSCK = p5,
 
-    I2C_SDA0 = p29,
-    I2C_SCL0 = p28,
+    I2C_SDA0 = p24,
+    I2C_SCL0 = p25,
 
 
-    I2C_SDA = p29,
-    I2C_SCL = p28, 
+    I2C_SDA = p24,
+    I2C_SCL = p25, 
 
    
-    D0  = p21,
-    D1  = p22,
-    D2  = p23,
-    D3  = p24,
-    D4  = p25,
-    D5  = p9,
-    D6  = p8,
-    D7  = p7,
+
+    D0  = p0, 
+    D1  = p1,
+    D2 = p2,
     
-    D8  = p15,
-    D9  = p14,
-    D10 = p13,
-    D11 = p12,
-    D12 = p11,
-    D13 = p10,
+    D8  = p8,
+    D9  = p9,
 
-    D14 = p29, // I2C - SDA
-    D15 = p28, // I2C - SCL
-
-   D16 = p15, // SPI - SCK
-   D17 = p7, // SPI - MISO
-   D18 = p13, // SPI - MOSI
+    D3  = p3, 
+    D4  = p4, 
+    D5  = p5, 
+	D30 = p30,
 
     A0  = p1,
-    A1  = p2,
-    A2  = p3,
-    A3  = p4,
-    A4  = p5,
-    A5  = p6,
-    
-    D19 = A0,
-    D20 = A1,
-    D21 = A2,
-    D22 = A3,
-    D23 = A4,
-    D24 = A5,
+    A1 = p2,
+    A2 = p3,
+    A4 = p4,
+    A5 = p5,
 
     // Not connected
     NC = (int)0xFFFFFFFF
