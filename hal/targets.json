@@ -1401,6 +1401,25 @@
         "inherits": ["MCU_NRF51_16K_OTA"],
         "extra_labels_add": ["HRM1017"],
         "macros_add": ["TARGET_HRM1017", "TARGET_NRF_LFCLK_RC"]
+    }, 
+     "OLIMEXINO_BLE": {
+        "supported_form_factors": ["ARDUINO"],
+        "inherits": ["MCU_NRF51_16K"],
+        "progen": {"target": "olimexino_ble"},
+        "device_has": ["ANALOGIN", "ERROR_PATTERN", "I2C", "INTERRUPTIN", "PORTIN", "PORTINOUT", "PORTOUT", "PWMOUT", "SERIAL", "SLEEP", "SPI", "SPISLAVE"],
+        "release": true
+    },
+    "OLIMEXINO_BLE_BOOT": {
+        "supported_form_factors": ["ARDUINO"],
+        "inherits": ["MCU_NRF51_16K_BOOT"],
+        "extra_labels_add": ["OLIMEXINO_BLE"],
+        "macros_add": ["TARGET_OLIMEXINO_BLE"]
+    },
+    "OLIMEXINO_BLE_OTA": {
+        "supported_form_factors": ["ARDUINO"],
+        "inherits": ["MCU_NRF51_16K_OTA"],
+        "extra_labels_add": ["OLIMEXINO_BLE"],
+        "macros_add": ["TARGET_OLIMEXINO_BLE"]
     },
     "RBLAB_NRF51822": {
         "supported_form_factors": ["ARDUINO"],
